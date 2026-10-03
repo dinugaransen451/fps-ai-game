@@ -57,3 +57,6 @@ crashlytics-build.properties
 # OS files
 .DS_Store
 Thumbs.db
+
+Assets/Abandoned_Asylum/
+Assets/Abandoned_Asylum.meta
