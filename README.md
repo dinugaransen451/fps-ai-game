@@ -15,7 +15,7 @@ One Unity project, one repo, graded separately by each module.
 |---|---|---|
 | [Name] | World Builder (level, lighting, textures, NavMesh bake) | [Agent name / behavior] |
 | [Name] | Systems Engineer (player physics: doors, barricades, throwing) | [Agent name / behavior] |
-| [Name] | Core Developer (custom 3D models) | [Agent name / behavior] |
+| [Name] | Core Developer (custom 3D models) | The Screamer - Utility AI (flee / hide / scream-alert) |
 | [Name] | Agent Controller (path arrays -> movement/animation) | [Agent name / behavior] |
 
 ## Requirements
