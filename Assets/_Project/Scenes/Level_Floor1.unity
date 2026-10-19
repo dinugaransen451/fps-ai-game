@@ -5995,13 +5995,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Director
   player: {fileID: 1598257118}
+  stats: {fileID: 1598257122}
   spawnPointsParent: {fileID: 854325032}
   zombiePrefab: {fileID: 6864199054768515761, guid: f8cd85e4b99b2e84584960625865654c, type: 3}
-  checkInterval: 5
-  maxZombies: 5
   minDistanceFromPlayer: 8
   minDistanceBetweenZombies: 6
   snapDistance: 4
+  fastestInterval: 4
+  slowestInterval: 12
+  maxZombies: 5
+  stayRadius: 6
+  stayTimeLimit: 20
 --- !u!4 &864117675
 Transform:
   m_ObjectHideFlags: 0
@@ -11042,6 +11046,7 @@ GameObject:
   - component: {fileID: 1598257121}
   - component: {fileID: 1598257120}
   - component: {fileID: 1598257119}
+  - component: {fileID: 1598257122}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -11144,6 +11149,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598257117}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1598257122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598257117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e858f0d2f6cb084284386a1db3a1793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+  health: 100
+  maxHealth: 100
+  ammo: 30
+  fullAmmo: 30
 --- !u!114 &1602323801
 MonoBehaviour:
   m_ObjectHideFlags: 0
