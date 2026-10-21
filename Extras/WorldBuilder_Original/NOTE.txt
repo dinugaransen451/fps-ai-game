@@ -1,0 +1,8 @@
+These are the files from the original "world builder" zip, kept for reference only (outside Assets/, so Unity ignores them).
+
+Why they are not used in the final game:
+  * Level_Floor1.unity is a single "day room" built from a third-party asset pack that was not in the zip
+    (about 60 prefab / material / mesh GUIDs are missing) -> it would open pink/empty.
+  * Its NavMesh data and the ProjectSettings/URP settings were Git LFS pointer files (no real content).
+  * There were no textures or materials.
+Director.cs and PlayerStats.cs were kept and extended: see Assets/_Project/Scripts/AI/Agent1_Director/.
