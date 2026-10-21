@@ -1,0 +1,12 @@
+﻿# DEPENDENCIES.txt for Member 4 (Agent Controller + Runner)
+## Shared files these scripts need to compile (NOT copied into zip)
+
+- Assets/_Project/Scripts/Core/Interfaces.cs: IBlocker, BlockerRegistry, NoiseSystem/NoiseKind, IAlertListener/AlertEvent/AlertSystem, ZombieKind. Used by NavGrid (BlockerRegistry, IBlocker) and RunnerBrain (interfaces/signals).
+- Assets/_Project/Scripts/Core/NoiseSystem.cs / AlertSystem.cs: RunnerBrain listens to noise and alerts.
+- Assets/_Project/Scripts/Core/BlockerRegistry.cs: NavGrid reads blocker bounds/penalties to compute block costs; RunnerBrain interacts with blockers.
+- Assets/_Project/Scripts/Core/ZombieHealth.cs: Health checks, kind, speed scaling based on player health context.
+- Assets/_Project/Scripts/Core/GameAudio.cs, GameFX.cs: Audio/FX calls in RunnerBrain/movement context.
+- Assets/_Project/Scripts/Player/PlayerStats.cs: Used for health-based speed scaling and damage context.
+- Assets/_Project/Scripts/Physics/Door.cs, Barricade.cs: RunnerBrain may call Door.Bash/Open; blockers used by NavGrid costs.
+- Assets/_Project/Scripts/AI/Common/Senses.cs: Line-of-sight checks for sprint/behavior.
+- Assets/_Project/Scripts/Core/Interfaces/PlayerController etc as needed by shared systems.
