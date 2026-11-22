@@ -10,12 +10,12 @@ namespace ZombieGame
     {
         public static PlayerStats Instance { get; private set; }
 
-        public float health = 100f;
-        public float maxHealth = 100f;
+        public float health = 300f;
+        public float maxHealth = 300f;
 
         [Header("Ammo (magazine + reserve)")]
-        public int ammo = 12;            // rounds in the magazine
-        public int fullAmmo = 12;        // magazine size
+        public int ammo = 20;            // rounds in the magazine
+        public int fullAmmo = 20;        // magazine size
         public int reserveAmmo = 36;
         public int maxReserve = 96;
 
